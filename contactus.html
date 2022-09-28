@@ -8,98 +8,25 @@
 	<title>3B Docs</title>
 	<link rel="icon" type="image/x-icon" href="./images/logo-noname.svg">
 
+    <script src="./scripts/component-header.js"></script>
+    <script src="./scripts/component-main.js"></script>
+    <script src="./scripts/component-new-case.js"></script>
+    <script src="./scripts/main.js"></script>
+
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-offline.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-legacy.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system_touch.css"></link>
-	<style>
-		body {
-		    font-size: 0.8125rem;
-		    background: white;
-		}
-
-        .app.viewport {
-            position: relative;
-            z-index: 1;
-        }
-        .main {
-            position: relative;
-            display: flex;
-        }
-        div.content {
-            flex: 2;
-            position: relative;
-            overflow: auto;
-            min-height: calc(100vh - 3.125rem - 2.5rem);
-        }
-        .content-inner {
-            flex: 2;
-            position: relative;
-            display: flex;
-        }
-        .code.slds-text-longform {
-            background-color: #f2f7fc;
-            font-size: 1rem;
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            border-radius: 4px;
-            border: solid 3px #f2f2f2;
-        }
-	</style>
+    <link rel="stylesheet" href="./styles/custom.css"></link>
 </head>
 <body>
     <div class="app viewport">
+    	<c-header active="Contact Us"></c-header>
 
-    	<header class="">
-            <!-- Alert -->
-            <div class="slds-text-align_center slds-size_full slds-text-body_regular">
-                <div class="slds-notify_alert system-message level-info slds-theme_info">
-                    <span>This app is in Beta</span>
-                </div>
-            </div>
-            <div class="slds-p-top_x-small">
-                <!-- App Logo -->
-                <div class="slds-global-header">
-                    <div class="slds-global-header__item">
-                        <div class="slds-global-header__logo"></div>
-                    </div>
-                </div>
-                <!-- App Navigation Bar -->
-                <div class="slds-context-bar slds-scrollable_x">
-                  <div class="slds-context-bar__primary">
-                    <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
-                      <span class="slds-context-bar__label-action slds-context-bar__app-name">
-                          <span class="slds-truncate" title="3B Docs">Documents</span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <nav class="slds-context-bar__secondary" role="navigation">
-                    <ul class="slds-grid">
-                      <li class="slds-context-bar__item">
-                        <a href="./" class="slds-context-bar__label-action" title="App">
-                          <span class="slds-truncate" title="App">App</span>
-                        </a>
-                      </li>
-                      <li class="slds-context-bar__item">
-                        <a href="https://3bknowhow.com/" class="slds-context-bar__label-action" title="Menu Item">
-                          <span class="slds-truncate" title="Knowledge Base">Knowledge Base</span>
-                        </a>
-                      </li>
-                      <li class="slds-context-bar__item slds-is-active">
-                        <a href="./contactus" class="slds-context-bar__label-action" title="Menu Item">
-                          <span class="slds-truncate" title="Contact U">Contact Us</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-            </div>
-        </header>
         <div class="main">
             <div class="content">
                 <div class="content-inner">
+                    
                     <div class="slds-grid slds-col slds-text slds-grid_vertical">
                         <div class="slds-col slds-size_1-of-1">
                             <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
@@ -109,74 +36,7 @@
                                     </span>
                                 </h1>
                                 <p>Please reach out to us if you have any recommendations, questions, issues or need support in getting started. One of our team will be in touch with you very soon.</p>
-                                
-                                <div>
-                                    <!--  ----------------------------------------------------------------------  -->
-                                    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-                                    <!--  If necessary, please modify the charset parameter to specify the        -->
-                                    <!--  character set of your HTML page.                                        -->
-                                    <!--  ----------------------------------------------------------------------  -->
-
-                                    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-                                    <script src="https://www.google.com/recaptcha/api.js"></script>
-                                    <script>
-                                     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-                                    </script>
-
-                                    <!--  ----------------------------------------------------------------------  -->
-                                    <!--  NOTE: Please add the following <FORM> element to your page.             -->
-                                    <!--  ----------------------------------------------------------------------  -->
-
-                                    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-                                        <input type=hidden name='captcha_settings' value='{"keyname":"X3BDocs","fallback":"true","orgId":"00D1r000002dpG5","ts":""}'>
-                                        <input type=hidden name="orgid" value="00D1r000002dpG5">
-                                        <input type=hidden name="retURL" value="https://www.3bdocs.com/">
-
-                                        <!--  ----------------------------------------------------------------------  -->
-                                        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-                                        <!--  these lines if you wish to test in debug mode.                          -->
-                                        <!--  <input type="hidden" name="debug" value=1>                              -->
-                                        <!--  <input type="hidden" name="debugEmail" value="james@3bforms.com">       -->
-                                        <!--  ----------------------------------------------------------------------  -->
-
-                                        <div class="slds-form">
-                                            <div class="slds-form-element slds-form-element_stacked">
-                                                <label class="slds-form-element__label" ><abbr class="slds-required" title="required">* </abbr>Your Name</label>
-                                                <div class="slds-form-element__control">
-                                                  <input  id="name" maxlength="80" name="name" size="20" type="text" required class="slds-input"/>
-                                                </div>
-                                            </div>
-                                            <div class="slds-form-element slds-form-element_stacked">
-                                                <label class="slds-form-element__label" ><abbr class="slds-required" title="required">* </abbr>Email</label>
-                                                <div class="slds-form-element__control">
-                                                  <input  id="email" maxlength="80" name="email" size="20" type="text" required class="slds-input"/>
-                                                </div>
-                                            </div>
-                                            <div class="slds-form-element slds-form-element_stacked">
-                                                <label class="slds-form-element__label" >Phone</label>
-                                                <div class="slds-form-element__control">
-                                                  <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="slds-input"/>
-                                                </div>
-                                            </div>
-                                            <div class="slds-form-element slds-form-element_stacked">
-                                                <label class="slds-form-element__label" >Subject</label>
-                                                <div class="slds-form-element__control">
-                                                  <input  id="subject" maxlength="80" name="subject" size="20" type="text" class="slds-input"/>
-                                                </div>
-                                            </div>
-                                            <div class="slds-form-element slds-form-element_stacked">
-                                                <label class="slds-form-element__label" ><abbr class="slds-required" title="required">* </abbr>Details</label>
-                                                <div class="slds-form-element__control">
-                                                  <textarea name="description" class="slds-input" required placeholder="Tell us why you are reaching out to us"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="g-recaptcha" data-sitekey="6LcilDYiAAAAAJsiuE3oEpzbdn1rmmWUS5kAeUV6"></div><br>
-                                        <input type="submit" name="submit" class="slds-button slds-button_brand">
-                                    </form>
-                                </div>
-
+                                <c-new-case></c-new-case>
                             </div>
                         </div>
                     </div>
