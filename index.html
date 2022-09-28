@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	
+	<title>3B Docs</title>
+	<link rel="icon" type="image/x-icon" href="./images/logo-noname.svg">
+
+	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system.css"></link>
+	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-offline.css"></link>
+	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-legacy.css"></link>
+	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system_touch.css"></link>
+	<style>
+		body {
+		    font-size: 0.8125rem;
+		    background: white;
+		}
+
+        .app.viewport {
+            position: relative;
+            z-index: 1;
+        }
+        .main {
+            position: relative;
+            display: flex;
+        }
+        div.content {
+            flex: 2;
+            position: relative;
+            overflow: auto;
+            min-height: calc(100vh - 3.125rem - 2.5rem);
+        }
+        .content-inner {
+            flex: 2;
+            position: relative;
+            display: flex;
+        }
+        .code.slds-text-longform {
+            background-color: #f2f7fc;
+            font-size: 1rem;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            border-radius: 4px;
+            border: solid 3px #f2f2f2;
+        }
+	</style>
+</head>
+<body>
+    <div class="app viewport">
+
+    	<header class="">
+            <!-- Alert -->
+            <div class="slds-text-align_center slds-size_full slds-text-body_regular">
+                <div class="slds-notify_alert system-message level-info slds-theme_info">
+                    <span>This app is in Beta</span>
+                </div>
+            </div>
+            <div class="slds-p-top_x-small">
+                <!-- App Logo -->
+                <div class="slds-global-header">
+                    <div class="slds-global-header__item">
+                        <div class="slds-global-header__logo"></div>
+                    </div>
+                </div>
+                <!-- App Navigation Bar -->
+                <div class="slds-context-bar slds-scrollable_x">
+                  <div class="slds-context-bar__primary">
+                    <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+                      <span class="slds-context-bar__label-action slds-context-bar__app-name">
+                          <span class="slds-truncate" title="3B Docs">Documents</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <nav class="slds-context-bar__secondary" role="navigation">
+                    <ul class="slds-grid">
+                      <li class="slds-context-bar__item slds-is-active">
+                        <a href="./" class="slds-context-bar__label-action" title="App">
+                          <span class="slds-truncate" title="App">App</span>
+                        </a>
+                      </li>
+                      <li class="slds-context-bar__item">
+                        <a href="https://3bknowhow.com/" class="slds-context-bar__label-action" title="Menu Item">
+                          <span class="slds-truncate" title="Knowledge Base">Knowledge Base</span>
+                        </a>
+                      </li>
+                      <li class="slds-context-bar__item">
+                        <a href="./contactus" class="slds-context-bar__label-action" title="Menu Item">
+                          <span class="slds-truncate" title="Contact U">Contact Us</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="content">
+                <div class="content-inner">
+                    <div class="slds-grid slds-col slds-text slds-grid_vertical">
+                        <div class="slds-col slds-size_1-of-1">
+                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
+                                <h1 class="slds-text-heading_large">
+                                    <span id="topic-title">
+                                        Introducing 3B Documents & Electronic Signatures
+                                    </span>
+                                </h1>
+                                <p>An application built natively on the Salesforce platform for generating electronic documents and collecting signatures from Salesforce and non-Salesforce alike. The application is created using cutting edge technologies that will enable your business to scale without the added cost per transaction. Streamline agreement preparation, redlining, collaboration, and approvals. Safely and centrally store agreements for easy access and discovery.</p>
+                                <p>Some of the main features the application offers are:</p>
+                                <ul>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Nested Related Children</a>
+                                        </strong><br >
+                                        Support rendering repeatable blocks with multiple <em>nested child related objects</em> 
+                                    </li>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Unlimited Parent Relationships</a>
+                                        </strong><br >
+                                        Add merge tags which traverse an unlimited number of parent relationships
+                                    </li>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Document Version Control</a>
+                                        </strong><br >
+                                        Create a snapshot of a document each time a change is registered. Rewind back to an older version if needed
+                                    </li>  
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Reusable Sub-Templates</a>
+                                        </strong><br >
+                                        Mark templates as "Sub-Templates" to allow embedding them in other templates. Support both Static and Dynamic sub-templates
+                                    </li> 
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Contract Redlining</a>
+                                        </strong><br >
+                                        Allow one or multiple collaborators to agree the terms of a contract. Assign permissions and approval process
+                                    </li>  
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Assign Multiple Signatories</a>
+                                        </strong><br >
+                                        Add multiple signatories to a document that requires an electronic signature. Add an order of signing and control the workflow
+                                    </li> 
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Embedded Input Elements</a>
+                                        </strong><br >
+                                        Add HTML Elements like <em>drop downs, checkbox(es), radio-buttons, text input, date input</em> etc. to a template to collect user inputs
+                                    </li>   
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://3bknowhow.com/">Extend Functionality With Code Snippets</a>
+                                        </strong><br >
+                                        Using <em>Custom Function Expressions</em>, you can extend the application and integrate with charting software and even create your own logic for rendering
+                                    </li>  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
+                                <h1 class="slds-text-heading_large">
+                                    <span id="topic-title">
+                                        Interested in Learning More?
+                                    </span>
+                                </h1>
+                                <p>Jump to our Knowledge Base to learn how to implement 3B Docs in your org.</p>
+
+                                <ul>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="./contactus">Book a Demo</a>
+                                        </strong><br >
+                                        Support rendering repeatable blocks with multiple <em>nested child related objects</em> 
+                                    </li>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="./contactus">Get Support or Report Issues</a>
+                                        </strong><br >
+                                        Send us an email or raise a case and one of our support representatives will be in touch with you very soon
+                                    </li>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="./contactus">Recommend App Improvement</a>
+                                        </strong><br >
+                                        We want to hear from you and improve our products. Feel free to reach out to us using the support channels
+                                    </li>
+                                    <li class="slds-p-bottom_small" >
+                                        <strong >
+                                            <a href="https://appexchange.salesforce.com/">Download Now</a>
+                                        </strong><br >
+                                        Download the application by searching <em>"3B Docs"</em> in the AppExchange and following the on-screen instructions
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
