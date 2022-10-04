@@ -13,8 +13,8 @@
 
 	<link rel="icon" type="image/x-icon" href="./images/logo-noname.svg">
 
-    <script src="./scripts/component-header.js"></script>
-    <script src="./scripts/component-main.js"></script>
+    <script src="./scripts/header/component-header.js" type="module"></script>
+    <script src="./scripts/longform/component-longform.js" type="module"></script>
     <script src="./scripts/main.js"></script>
 
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system.css"></link>
@@ -33,14 +33,14 @@
                     
                     <div class="slds-grid slds-col slds-text slds-grid_vertical">
                         <div class="slds-col slds-size_1-of-1">
-                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
+                            <c-longform>
                                 <h1 class="slds-text-heading_large">
                                     <span id="topic-title">
                                         Thank you for your message!
                                     </span>
                                 </h1>
                                 <p>One of our support representatives will reach out to you as soon as possible.</p>
-                            </div>
+                            </c-longform>
                         </div>
                     </div>
                 </div>

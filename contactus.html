@@ -13,9 +13,9 @@
 
 	<link rel="icon" type="image/x-icon" href="./images/logo-noname.svg">
 
-    <script src="./scripts/component-header.js"></script>
-    <script src="./scripts/component-main.js"></script>
-    <script src="./scripts/component-new-case.js"></script>
+    <script src="./scripts/header/component-header.js" type="module"></script>
+    <script src="./scripts/longform/component-longform.js" type="module"></script>
+    <script src="./scripts/new-case/component-new-case.js" type="module"></script>
     <script src="./scripts/main.js"></script>
 
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system.css"></link>
@@ -33,27 +33,28 @@
                 <div class="content-inner">
                     <div class="slds-grid slds-col slds-text slds-grid_vertical">
                         <div class="slds-col slds-size_1-of-1">
-                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
-                                <h1 class="slds-text-heading_large">
-                                    <span id="topic-title">
+                            <c-longform>
+                                <h1 class="slds-m-bottom_small slds-text-heading_large">
+                                    <span>
                                         Need Support or Found a Bug?
                                     </span>
                                 </h1>
                                 <p>Please reach out to us if you have any recommendations, questions, issues or need support in getting started. One of our team will be in touch with you very soon.</p>
                                 <c-new-case></c-new-case>
-                            </div>
+                            </c-longform>
                         </div>
                         <div class="slds-col slds-size_1-of-1">
-                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
-                                <h1 class="slds-text-heading_large">
-                                    <span id="topic-title">
+                            <c-longform>
+                                <h1 class="slds-m-bottom_small slds-text-heading_large">
+                                    <span>
                                         About Us
                                     </span>
                                 </h1>
                                 <p>3B produces key Salesforce native solutions built to meet critical Staffing Industry requirements. Integrated with Bullhorn for Salesforce, these include dynamic, configurable <a href="https://www.3bforms.com/">3B Forms</a> and <a href="./">3B Docs</a>,-authoring tools for data collection and document generation with e-signature; and these, separately or together with the compliance engine and workflows of <a href="https://www.3bonboarding.com">3B Onboarding</a>, ensure superior productivity and quality of information for its staffing clients.</p>
+                                <br/>
                                 <p><strong>Company Address</strong></p>
                                 <p>3B Soft Ltd, 3rd Floor, 86-90 Paul Street, London, EC2A 4NE</p>
-                            </div>
+                            </c-longform>
                         </div>
                     </div>
                 </div>

@@ -13,14 +13,22 @@
     
 	<link rel="icon" type="image/x-icon" href="./images/logo-noname.svg">
 
-    <script src="./scripts/component-header.js"></script>
-    <script src="./scripts/component-main.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/blockquote/component-blockquote.js" type="module"></script>
+    <script src="./scripts/header/component-header.js" type="module"></script>
+    <script src="./scripts/longform/component-longform.js" type="module"></script>
+    <script src="./scripts/products-compare/products-compare.js" type="module"></script>
+    <script src="./scripts/main.js" type="module"></script>
+
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-offline.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-legacy.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system_touch.css"></link>
     <link rel="stylesheet" href="./styles/custom.css"></link>
+
+    <script type="module">
+        import { init } from './scripts/main.js';
+        init();
+    </script>
 </head>
 <body>
     <div class="app viewport">
@@ -30,9 +38,9 @@
                 <div class="content-inner">
                     <div class="slds-grid slds-col slds-text slds-grid_vertical">
                         <div class="slds-col slds-size_1-of-1">
-                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
-                                <h1 class="slds-text-heading_large">
-                                    <span id="topic-title">
+                            <c-longform>
+                                <h1 class="slds-m-bottom_small slds-text-heading_large">
+                                    <span>
                                         Introducing 3B Documents & Electronic Signatures
                                     </span>
                                 </h1>
@@ -93,44 +101,59 @@
 
                                     </li>  
                                 </ul>
-                            </div>
+                            </c-longform>
                         </div>
+                        
                         <div class="slds-col slds-size_1-of-1">
-                            <div class="code slds-m-around_medium slds-text-longform slds-p-around_small">
-                                <h1 class="slds-text-heading_large">
-                                    <span id="topic-title">
+                            <c-longform>
+                                <h1 class="slds-m-bottom_small slds-text-heading_large">
+                                    <span>
+                                        Products Comparison
+                                    </span>
+                                </h1>
+                                <p>Not all products are made the same. Here is a quick table to let you compare between the different offerings available on the Salesforce platform.</p>
+                                <br/>
+                                <div class="c-products-wrapper slds-scrollable_x">
+                                    <c-products-compare></c-products-compare>
+                                </div>
+                            </c-longform>                                
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-1">
+                            <c-longform>
+                                <h1 class="slds-m-bottom_small slds-text-heading_large">
+                                    <span>
                                         Interested in Learning More?
                                     </span>
                                 </h1>
                                 <p>Jump to our Knowledge Base to learn how to implement 3B Docs in your org.</p>
-
+                                <br/>
                                 <ul>
                                     <li class="slds-p-bottom_small" >
                                         <strong >
-                                            <a href="./contactus">Book a Demo</a>
+                                            <a href="./contactus.html">Book a Demo</a>
                                         </strong><br >
                                         Support rendering repeatable blocks with multiple <em>nested child related objects</em> 
                                     </li>
                                     <li class="slds-p-bottom_small" >
                                         <strong >
-                                            <a href="./contactus">Get Support or Report Issues</a>
+                                            <a href="./contactus.html">Get Support or Report Issues</a>
                                         </strong><br >
                                         Send us an email or raise a case and one of our support representatives will be in touch with you very soon
                                     </li>
                                     <li class="slds-p-bottom_small" >
                                         <strong >
-                                            <a href="./contactus">Recommend App Improvement</a>
+                                            <a href="./contactus.html">Recommend App Improvements</a>
                                         </strong><br >
                                         We want to hear from you and improve our products. Feel free to reach out to us using the support channels
                                     </li>
-                                    <li class="slds-p-bottom_small" >
-                                        <strong >
-                                            <a href="https://appexchange.salesforce.com/">Download Now</a>
-                                        </strong><br >
-                                        Download the application by searching <em>"3B Docs"</em> in the AppExchange and following the on-screen instructions
-                                    </li>
                                 </ul>
-                            </div>
+
+                                <c-blockquote title="">
+                                    <p>Download the application by searching <em>"3B Docs"</em> in the AppExchange</p>
+                                    <a href="https://appexchange.salesforce.com/" class="slds-button slds-button_brand slds-m-top_x-small">Download Now</a>
+                                </c-blockquote>
+                            </c-longform>
                         </div>
                     </div>
                 </div>
