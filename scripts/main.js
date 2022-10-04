@@ -1,6 +1,12 @@
 // document.addEventListener("DOMContentLoaded", function(){
 //     console.log('Loaded!');    
 // });
+
+
+export function init() {
+  console.log('Init MAIN!');
+}
+
 /** 
  * Tawk.to Integration
  */ 
@@ -13,7 +19,3 @@
 //     s1.setAttribute('crossorigin','*');
 //     s0.parentNode.insertBefore(s1,s0);
 // })();
-
-export function init() {
-  console.log('Init MAIN!');
-}

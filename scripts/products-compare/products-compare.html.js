@@ -34,6 +34,9 @@ export default function html(){
             </table>
         </div>
         <div>
+            <hr/>
+        </div>
+        <div>
             <table>
                 <thead>
                     <tr>

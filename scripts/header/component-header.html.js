@@ -32,7 +32,7 @@ export default function html(){
                                 </a>
                             </li>
                             <li class="slds-context-bar__item ${this.activeTab == 'Knowledge Base' ? 'slds-is-active' : ''}">
-                                <a href="https://3bknowhow.com/" class="slds-context-bar__label-action" title="Knowledge Base">
+                                <a href="./knowledge.html" class="slds-context-bar__label-action" title="Knowledge Base">
                                 <span class="slds-truncate" title="Knowledge Base">Knowledge Base</span>
                                 </a>
                             </li>
