@@ -62,7 +62,6 @@ export default class ComponentProductsCompare extends HTMLElement {
      * Main template renderer
      */ 
     render(){
-         console.log('Rendering Template');
         let templateElement = this.getTemplateElement();
 
         /* do not attach to shadow root */

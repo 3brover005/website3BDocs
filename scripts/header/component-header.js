@@ -15,8 +15,6 @@ export default class ComponentHeader extends HTMLElement {
     connectedCallback() {
         //Obligatory render call
         this.render();
-
-        console.log('Header Loaded', this.activeTab);
     }
 
     disconnectedCallback() {
@@ -44,7 +42,6 @@ export default class ComponentHeader extends HTMLElement {
      * Main template renderer
      */ 
     render(){
-        console.log('Rendering Template');
         let templateElement = this.getTemplateElement();
 
         /* do not attach to shadow root */

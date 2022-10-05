@@ -39,7 +39,6 @@ export default class ComponentNewCase extends HTMLElement {
      * Main template renderer
      */ 
     render(){
-        console.log('Rendering Template');
         let templateElement = this.getTemplateElement();
 
         /* do not attach to shadow root */

@@ -11,8 +11,6 @@ export default class ComponentLongform extends HTMLElement {
     connectedCallback() {
         //Obligatory render call
         this.render();
-
-        console.log('Longform Loaded', this.title);
     }
 
     disconnectedCallback() {
@@ -40,7 +38,6 @@ export default class ComponentLongform extends HTMLElement {
      * Main template renderer
      */ 
     render(){
-        console.log('Rendering Template');
         let templateElement = this.getTemplateElement();
 
         if(this.template){

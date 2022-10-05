@@ -12,8 +12,6 @@ export default class ComponentKnowledge extends HTMLElement {
         //Obligatory render call
         this.render();
 
-        console.log('Knowledge Base Loaded', this.title);
-
         //Add iFrame loaded listener
         document.querySelector("iframe").addEventListener("load", this.frameLoaded.bind(this));
 
@@ -60,7 +58,6 @@ export default class ComponentKnowledge extends HTMLElement {
      * Main template renderer
      */ 
     render(){
-        console.log('Rendering Template');
         let templateElement = this.getTemplateElement();
 
         /* do not attach to shadow root */

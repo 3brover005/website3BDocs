@@ -15,8 +15,6 @@ class ComponentBlockquote extends HTMLElement {
     connectedCallback() {
         //Obligatory render call
         this.render();
-
-        console.log('Blockquote Loaded', this.title);
     }
 
     disconnectedCallback() {
@@ -44,7 +42,6 @@ class ComponentBlockquote extends HTMLElement {
      * Main template renderer
      */ 
     render(){
-        console.log('Rendering Template');
         let templateElement = this.getTemplateElement();
 
         if(this.template){

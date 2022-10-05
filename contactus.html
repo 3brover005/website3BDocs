@@ -16,18 +16,22 @@
     <script src="./scripts/header/component-header.js" type="module"></script>
     <script src="./scripts/longform/component-longform.js" type="module"></script>
     <script src="./scripts/new-case/component-new-case.js" type="module"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
 
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-offline.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system-legacy.css"></link>
 	<link rel="stylesheet" href="./styles/salesforce-lightning-design-system_touch.css"></link>
     <link rel="stylesheet" href="./styles/custom.css"></link>
+
+     <script type="module">
+        import { init } from './scripts/main.js';
+        init();
+    </script>
 </head>
 <body>
     <div class="app viewport">
     	<c-header active="Contact Us"></c-header>
-
         <div class="main">
             <div class="content">
                 <div class="content-inner">
