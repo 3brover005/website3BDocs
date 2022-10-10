@@ -14,4 +14,5 @@ RewriteCond %{THE_REQUEST} ^.*/index
 RewriteRule ^(.*)index.html$ /$1 [R=301,L]
 
 </IfModule>
+ErrorDocument 404 http://www.3bdocs.com/404.html
 
