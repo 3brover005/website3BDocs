@@ -41,7 +41,7 @@ export default function html(){
                 <thead>
                     <tr>
                         <th>&nbsp;</th>
-                        <th><a href="${this.docsProduct.link}" target="_blank">${this.docsProduct.name}</a></th>
+                        <th><a href="${this.ourProduct.link}" target="_blank">${this.ourProduct.name}</a></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,7 +53,7 @@ export default function html(){
                         </tr>
                         <tr>
                             <td title="${feature.title}" class="slds-text-title_caps">${feature.name}</td>
-                            <td>${this.docsProduct[feature.property]}</td>
+                            <td>${this.ourProduct[feature.property]}</td>
                         </tr>
                     `
                 }).join("")}

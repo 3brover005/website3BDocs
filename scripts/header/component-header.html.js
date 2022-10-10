@@ -15,7 +15,7 @@ export default function html(){
                     </div>
                 </div>
                 <!-- App Navigation Bar -->
-                <div class="slds-context-bar slds-scrollable_x c-3b-docs-context-bar">
+                <div class="slds-context-bar slds-scrollable_x c-3b-app-context-bar">
                     <div class="slds-context-bar__primary">
                         <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
                         <span class="slds-context-bar__label-action slds-context-bar__app-name">

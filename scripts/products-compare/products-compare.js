@@ -24,7 +24,7 @@ export default class ComponentProductsCompare extends HTMLElement {
         {name: 'Titan', link:'https://formtitan.com/', native:'No', multiSign:'Yes', redlining:'No', batch:'Yes', price:'$$$', templates:'No', inputs:'HTML, PDF, DOCX, others', outputs:'PDF, DOCX, others'}
     ];
 
-    docsProduct = {
+    ourProduct = {
         name: '3B Docs', link:'https://www.3bdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'No', price:'FREE', templates:'Yes', inputs:'Only HTML', outputs:'HTML, PDF, DOCX, others'
     }
 
