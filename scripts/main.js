@@ -27,6 +27,7 @@ export function init() {
             s1.charset = 'UTF-8';
             s1.setAttribute('crossorigin','*');
             s1.onload = function(){
+                console.log('Google Tag Manager Loaded');
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-15Y9BG0QSZ');
