@@ -1,7 +1,7 @@
 export default function css(){
     return `
         .site-blockquote_note.doc {
-            border-left-color: var(--3b-green);
+            border-left-color: var(--3b-brand-primary);
         }
 
         blockquote.doc {
