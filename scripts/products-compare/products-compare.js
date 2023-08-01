@@ -25,7 +25,7 @@ export default class ComponentProductsCompare extends HTMLElement {
     ];
 
     ourProduct = {
-        name: '3B Docs', link:'https://www.3bdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'No', price:'FREE', templates:'Yes', inputs:'Only HTML', outputs:'HTML, PDF, DOCX, others'
+        name: '3B Docs', link:'https://www.3bdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'No', price:'FREE', templates:'Yes', inputs:'Native: HTML, Hosted: PDF', outputs:'HTML, PDF, DOCX, others'
     }
 
     constructor() {

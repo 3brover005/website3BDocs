@@ -1,12 +1,6 @@
 export default function html(){
     return `
         <header class="">
-            <!-- Alert -->
-            <div class="slds-text-align_center slds-size_full slds-text-body_regular">
-                <div class="slds-notify_alert system-message level-info slds-theme_info">
-                    <span>This app is in Beta</span>
-                </div>
-            </div>
             <div class="slds-p-top_x-small">
                 <!-- App Logo -->
                 <div class="slds-global-header">
@@ -39,6 +33,11 @@ export default function html(){
                             <li class="slds-context-bar__item ${this.activeTab == 'Contact Us' ? 'slds-is-active' : ''}">
                                 <a href="./contactus.html" class="slds-context-bar__label-action" title="Contact Us">
                                 <span class="slds-truncate" title="Contact U">Contact Us</span>
+                                </a>
+                            </li>
+                            <li class="slds-context-bar__item ${this.activeTab == 'Log In to E-Sign' ? 'slds-is-active' : ''}">
+                                <a href="https://app.3bdocs.com/" class="slds-context-bar__label-action" title="Log In to E-Sign">
+                                <span class="slds-truncate" title="Contact U">Log In to E-Sign</span>
                                 </a>
                             </li>
                         </ul>
