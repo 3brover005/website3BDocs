@@ -1,6 +1,11 @@
 export default function html(){
     return `
         <header class="">
+            <div class="slds-text-align_center slds-size_full slds-text-body_regular">
+                <div class="slds-notify_alert system-message level-info slds-theme_info">
+                    <span>You can now use 3B Sign to get PDFs e-signed</span>
+                </div>
+            </div>
             <div class="slds-p-top_x-small">
                 <!-- App Logo -->
                 <div class="slds-global-header">
