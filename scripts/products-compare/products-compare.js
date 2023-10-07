@@ -19,9 +19,7 @@ export default class ComponentProductsCompare extends HTMLElement {
         {name: 'DocuSign', link:'https://www.docusign.com/', native:'No', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
         {name: 'Conga', link:'https://conga.com/', native:'No', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
         {name: 'Docomotion', link:'https://www.docomotion.com/', native:'No', multiSign:'No', redlining:'No', batch:'Yes', price:'$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'Nintex', link:'https://www.nintex.com/', native:'No', multiSign:'Yes', redlining:'No', batch:'Yes', price:'$$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'S-Docs', link:'https://www.sdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$', templates:'Yes', inputs:'HTML, PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'Titan', link:'https://formtitan.com/', native:'No', multiSign:'Yes', redlining:'No', batch:'Yes', price:'$$$', templates:'No', inputs:'HTML, PDF, DOCX, others', outputs:'PDF, DOCX, others'}
+        {name: 'S-Docs', link:'https://www.sdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$', templates:'Yes', inputs:'HTML, PDF, DOCX, others', outputs:'PDF, DOCX, others'}
     ];
 
     ourProduct = {
